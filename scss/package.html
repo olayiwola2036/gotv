@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .package{
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+            align-items: center;
+            position: absolute;
+            left: 46%;
+            top: 28%;
+        }
+        .card{
+            background: rgb(113, 113, 245);
+            width: 35%;
+            height: 30vh;
+            position: absolute;
+            left:33%;
+            top: 43%;
+            justify-content: center;
+        }
+        .card::after{
+            content: '';
+            background-color:rgb(46, 44, 44);
+            position: absolute;
+            top: 100%;
+            left:-0.1%;
+            width: 100%;
+            height: 8vh;
+            border: 0px;
+        }
+        .supa-2 img{
+            position: absolute;
+            left: 72%;
+            top: 9%;
+            font-size: 100px;
+            width: 30%;
+            height: 27vh;
+
+        }
+        .supa img{
+           font-size: 25px;
+           position: absolute;
+           top: -5%;
+           bottom: 20%;
+           height: 13vh;
+        }
+        button{
+            color: white;
+            width: 24%;
+            padding: 10px;
+            border-radius: 23px;
+            background: rgb(91, 91, 250);
+            position: absolute;
+            top: 75%;
+            left: 5%;
+            border:1px solid white;
+        }
+          .paragraph{
+            position: absolute;
+            top: 55%;
+            left: 34%;
+            font-size: 12px;
+            color: white;
+            z-index: 2;
+            width: 35%;
+            height: 5vh;
+            line-height: 1px;
+        }
+        
+            .plus{
+                position: absolute;
+                top: 105%;
+                left: 5%;
+                z-index: 2;
+                color: white;
+                font-size: 18px;
+            }
+            .naira{
+                position: absolute;
+                top: 105%;
+                left:79%;
+                z-index: 2;
+                color: white;
+                font-size: 18px;
+            }
+        
+        
+        
+        .paragraph2{
+            position: absolute;
+            top: 58%;
+            left: 34%;
+            top: 100%;
+            font-size: 14px;
+            color: white;
+            z-index: 2;
+            width: 28%;
+            height: 5vh;
+            line-height: 1px;
+        }
+        .card2 {
+            background: rgb(240, 79, 79);
+            width: 35%;
+            height: 30vh;
+            position: absolute;
+            left:33%;
+            top: 89%;
+            justify-content: center; 
+        } 
+        .card2::after{
+            content: '';
+            background-color:rgb(73, 3, 3);
+            position: absolute;
+            top: 100%;
+            left:-0.1%;
+            width: 100%;
+            height: 8vh;
+            border: 0px;
+        }  
+        .supa2 img{
+            font-size: 5px;
+           position: absolute;
+           top: -3%;
+           left: 3%;
+           bottom: 15%;
+           height: 12vh;
+           width: 23%;
+        } 
+        .supa-3 img{
+            position: absolute;
+            left: 75%;
+            top: -11%;
+            font-size: 100px;
+            width: 25%; 
+        }
+        .button2{
+            color: white;
+            width: 24%;
+            padding: 10px;
+            border-radius: 23px;
+            background: rgb(87, 1, 1);
+            position: absolute;
+            top: 75%;
+            left: 5%;
+            border:1px solid white;
+        }
+        .plus2{
+            position: absolute;
+                top: 105%;
+                left: 5%;
+                z-index: 2;
+                color: white;
+                font-size: 18px; 
+        }
+        .naira2{
+            position: absolute;
+                top: 105%;
+                left:79%;
+                z-index: 2;
+                color: white;
+                font-size: 18px;
+        }
+        
+        .paragraph3{
+            position: absolute;
+            top: 147%;
+            left: 8.50%;
+            font-size: 14.80px;
+            color: white;
+            z-index: 2;
+            width: 28%;
+            height: 5vh;
+            line-height: 5px;
+        }
+        .card3 {
+            background:rgb(247, 166, 17);
+            width: 27%;
+            height: 30vh;
+            position: absolute;
+            left:8%;
+            top: 135%;
+            justify-content: center; 
+        } 
+        .card3::after{
+            content: '';
+            background-color:rgb(121, 4, 4);
+            position: absolute;
+            top: 100%;
+            left:-0.1%;
+            width: 100%;
+            height: 8vh;
+            border: 0px;
+            z-index: 1;
+        }  
+        .supa3 img{
+            font-size: 25px;
+           position: absolute;
+           top: -5%;
+           bottom: 20%;
+           height: 13vh;
+        } 
+        .supa-4 img{
+            position: absolute;
+            left: 72%;
+            top: -5%;
+            font-size: 100px;
+            width: 30%; 
+        }
+        .button3{
+            color: white;
+            width: 24%;
+            padding: 10px;
+            border-radius: 23px;
+            background: rgb(247, 247, 8);
+            position: absolute;
+            top: 75%;
+            left: 5%;
+            border:1px solid white;
+        }
+        .plus3{
+            position: absolute;
+                top: 105%;
+                left: 5%;
+                z-index: 2;
+                color: white;
+                font-size: 18px; 
+        }
+        .naira3{
+            position: absolute;
+                top: 105%;
+                left:79%;
+                z-index: 2;
+                color: white;
+                font-size: 18px;
+        }
+        
+        .paragraph4{
+            position: absolute;
+            top: 147%;
+            left: 38%;
+            font-size: 13.50px;
+            color: white;
+            z-index: 2;
+            width: 28%;
+            height: 5vh;
+            line-height: 5px;
+        }
+        .card4 {
+            background: rgb(2, 73, 2);
+            width: 27%;
+            height: 30vh;
+            position: absolute;
+            left:37%;
+            top: 135%;
+            justify-content: center; 
+        } 
+        .card4::after{
+            content: '';
+            background-color:rgb(0, 14, 0);
+            position: absolute;
+            top: 100%;
+            left:-0.1%;
+            width: 100%;
+            height: 8vh;
+            border: 0px;
+        }  
+        .supa4 img{
+            font-size: 25px;
+           position: absolute;
+           top: -5%;
+           bottom: 20%;
+           height: 13vh;
+        } 
+        .supa-5 img{
+            position: absolute;
+            left: 67%;
+            top:5%;
+            font-size: 100px;
+            width: 30%;
+            height: 28vh; 
+        }
+        .button4{
+            color: white;
+            width: 26%;
+            padding: 9px;
+            border-radius: 23px;
+            background: rgb(0, 46, 0);
+            position: absolute;
+            top: 75%;
+            left: 5%;
+            border:1px solid white;
+        }
+        .plus4{
+            position: absolute;
+                top: 105%;
+                left: 5%;
+                z-index: 2;
+                color: white;
+                font-size: 18px; 
+        }
+        .naira4{
+            position: absolute;
+                top: 105%;
+                left:79%;
+                z-index: 2;
+                color: white;
+                font-size: 18px;
+        }
+        
+        .paragraph5{
+            position: absolute;
+            top: 147%;
+            left: 65.50%;
+            font-size: 13.60px;
+            color: white;
+            z-index: 2;
+            width: 28%;
+            height: 5vh;
+            line-height: 5px;
+        }
+        .card5 {
+            background: rgb(192, 192, 4);
+            width: 25%;
+            height: 30vh;
+            position: absolute;
+            left:65%;
+            top: 135%;
+            justify-content: center; 
+        } 
+        .card5::after{
+            content: '';
+            background-color:rgb(78, 78, 3);
+            position: absolute;
+            top:100%;
+            left:-0.1%;
+            width: 100%;
+            height: 8vh;
+            border: 0px;
+        }  
+        .supa5 img{
+            font-size: 25px;
+           position: absolute;
+           top: -5%;
+           bottom: 20%;
+           height: 15vh;
+        } 
+        .supa-6 {
+            position: absolute;
+            left: 70%;
+            top: -20%;
+            font-size: 50px;
+            width: 39%;
+            height: 20vh; 
+        }
+        .button5{
+            color: white;
+            width: 27%;
+            padding: 8px;
+            border-radius: 23px;
+            background: rgb(243, 243, 3);
+            position: absolute;
+            top: 75%;
+            left: 4%;
+            border:1px solid white;
+        }
+        .plus5{
+            position: absolute;
+                top: 109%;
+                left: 5%;
+                z-index: 2;
+                color: white;
+                font-size: 15px; 
+        }
+        .naira5{
+            position: absolute;
+                top: 106%;
+                left:65%;
+                z-index: 2;
+                color: white;
+                font-size: 15px;
+                
+                
+        }
+        .bottom .down{
+            background: black;
+            width: 100%;
+            height: 25vh;
+            position: absolute;
+            top: 175%;
+            text-align: center;
+        }
+        .down{
+            text-align: center;
+            margin-top: 120px;
+            line-height: 40px;
+        }
+        .down{
+            color: white;
+        }
+        .p1{
+            align-items: center;
+            position: absolute;
+            top: 29%;
+            left: 40%;
+        }
+        .p2{
+            align-items: center;
+            position: absolute;
+            top: 67%;
+            left: 20%;
+        }
+        .buttom{
+            background: black;
+            height: 35vh;
+            width: 100%;
+            position: absolute;
+            top: 179%;
+            z-index: 2;
+            color: white;
+            line-height: 10px;
+        }
+        .down img{
+            line-height: 15px;
+            position: absolute;
+            top: 7%;
+            justify-content: center;
+            left: 45%;
+        }
+        
+  
+    .gotvlogo{
+        position: absolute;
+        left: 20px;
+        height: 8vh;
+    }
+    .list{
+        list-style: none;
+        display: inline-block;
+        position: absolute;
+        justify-content: center;
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        margin-left:170px;
+        font-size: 13px;
+        color: white;
+        
+    }
+        @media  (max-width:1028px) {
+            *{
+                margin: 0;
+                padding: 0;
+                align-items: center;
+               
+            }
+            body{
+                background: rgb(22, 22, 22);
+            }
+            .supa{
+                position: absolute;
+                top: -5%;
+                left: -1%;
+            }
+            .package{
+                text-align: center;
+                justify-content: center;
+                position: absolute;
+                top: 20%;
+                left: 47%;
+            }
+            .card{
+                position: absolute;
+                top: 38%;
+                left: 27%;
+                width: 55%;  
+            }
+            .card::after{
+                height: 6vh;
+            }
+            .paragraph{
+                position: absolute;
+                top: 50%;
+                left: 29%;
+                font-size: 11px;
+                line-height: 10px;
+                width: 47%;
+                height: 35vh;
+            }
+            .plus{
+                font-size: 12px;
+            }
+            .naira{
+                font-size: 12px;
+            }
+            button{
+                position: absolute;
+                left: 5%;
+                width: 25%;
+                padding: 3px;
+            
+            }
+            .card2{
+                position: absolute;
+                top: 85%;
+                left: 27%;
+                width: 55%;  
+                
+            }
+            .card2::after{
+            height: 6vh;
+            }
+            .plus2{
+                font-size: 12px;
+            }
+            .naira2{
+                font-size: 12px;
+            }
+            .paragraph2{
+                position: absolute;
+                top: 98%;
+                left: 28%;
+                font-size: 11px;
+                line-height: 7px;
+                width: 45%;
+                height: 35vh;
+            }
+            .button2{
+                position: absolute;
+                left: 5%;
+                width: 25%;
+                padding: 3px;
+            }
+            
+            .card3{
+                position: absolute;
+                top: 135%;
+                left: 3%;
+                width: 29%;  
+                
+            }
+            .card3::after{
+            height: 6vh;
+            }
+            .plus3{
+                font-size: 12px;
+            }
+            .naira3{
+                position: absolute;
+                font-size: 11px;
+                left: 64.60%;
+            }
+            .paragraph3{
+                position: absolute;
+                top: 147%;
+                left: 4%;
+                font-size: 8px;
+                line-height: 6px;
+                width: 45%;
+                height: 35vh;
+            }
+            .button3{
+                position: absolute;
+                left: 5%;
+                width: 46%;
+                padding: 3px;
+            }
+            
+            .card4{
+                position: absolute;
+                top: 135%;
+                left: 35%;
+                width: 29%;
+                
+            }
+            .card4::after{
+            height: 6vh;
+            }
+            .plus4{
+                font-size: 12px;
+            }
+            .naira4{
+                position: absolute;
+                left: 75%;
+                font-size: 12px;
+            }
+            .paragraph4{
+                position: absolute;
+                top: 148%;
+                left: 36%;
+                font-size: 10px;
+                line-height: 10px;
+                width: 45%;
+                height: 35vh;
+            }
+            .button4{
+                position: absolute;
+                left: 5%;
+                width: 47%;
+                padding: 3px;
+            }
+            .card5{
+                position: absolute;
+                top: 135%;
+                left: 66%;
+                width: 29%;  
+                
+            }
+            .card5::after{
+            height: 6vh;
+            }
+            .plus5{
+                position: absolute;
+                left: 8%;
+                font-size: 12px;
+            }
+            .naira5{
+                position: absolute;
+                top: 109%;
+                left: 67%;
+                font-size: 12px;
+            }
+            .paragraph5{
+                position: absolute;
+                top: 147%;
+                left: 67%;
+                font-size: 10px;
+                line-height: 6px;
+                width: 27%;
+                height: 35vh;
+            }
+            .button5{
+                position: absolute;
+                left: 5%;
+                width: 45%;
+                padding: 3px;
+                font-size: 12px;
+            }
+            .end{
+                font-size: 30px;
+                width: 35%;
+                height: 4v;
+            }
+            .gotvlogo{
+                font-size: 30px;
+            }
+            
+        }
+            
+            
+        
+    </style>
+    
+   <div class="header">
+    <img src="./images/download-removebg-preview 1(2).png" width="10%" style="padding: 10px;" class="gotvlogo">
+    <ul class="list">
+        <li><a href="#"></a> Get GOtv </li>
+        <li><a href="#"></a> Activate</li>
+        <li><a href="#"></a> Reconnet</li>
+        <li><a href="#"></a>Pay</li>
+        <li><a href="#"></a> TV Guide </li>
+        <li><a href="#"></a>Self Services</li>
+    </ul>
+   </div>    
+        <div class="package">Packages</div>
+        <nav>
+        <div class="paragraph">
+        <p>A Supa-sized GOtv experience Crystal clear picture with more local</p><br>
+        <p>channels, more for the kids,more lifestyle channels,more novellas</p><br>
+        <p>and more supa reason to LOVE IT.</p><br>
+        </div>
+ <div class="card">
+   <div class="supa" ><img src="./images/ssupaicon.png"></div>
+   <div class="supa-2"> <img src="./images/decoder-img.webp" width="60%" height="250vh"></div>
+   <button><strong>Know More</strong></button>
+   <div class="plus">80+ CHANNELS</div>
+   <div class="naira">NGN 5500</div>
+ </div>
+        <div class="paragraph2">
+        <p>Get maximum entertainment with the GOtv Max package. Packed </p><br>
+        <p>with local and international series, movies, telenovelas and kids</p><br>
+        <p>shows. Guaranteeing a little something for everyone to enjoy.</p><br>
+        </div>
+ <div class="card2">
+   <div class="supa2" ><img src="./images/max-removebg-preview.png"></div>
+   <div class="supa-3"> <img src="./images/gotv-max picture.webp" width="60%" height="250vh"></div>
+   <button class="button2"><strong>Know More</strong></button>
+   <div class="plus2">75+ CHANNELS</div>
+   <div class="naira2">NGN 4150</div>
+ </div>
+ 
+        <div class="paragraph3">
+        <p>GOtv Jolli guarantees affordable</p><br>
+        <p>entertainment with flexible payment options</p><br>
+        <p>to suit your lifestyle.</p><br>
+        </div>
+ <div class="card3">
+   <div class="supa3" ><img src="./images/jolli_icon-removebg-preview.png"></div>
+   <div class="supa-4"> <img src="./images/gotv-jolli.webp" width="60%" height="250vh"></div>
+   <button class="button3"><strong>Know More</strong></button>
+   <div class="plus3"> 65+ CHANNELS</div>
+   <div class="naira3">NGN 2800</div>
+ </div>
+        <div class="paragraph4">
+        <p>Get GOtv Jinja with sports and great TV 24/7</p><br>
+        <p>on crystal clear channels.</p><br>
+        </div>
+ <div class="card4">
+   <div class="supa4" ><img src="./images/jinja_icon-removebg-preview.png"></div>
+   <div class="supa-5"> <img src="./images/gotv-jinja.webp" width="60%" height="250vh"></div>
+   <button class="button4"><strong>Know More</strong></button>
+   <div class="plus4">45+ CHANNELS</div>
+   <div class="naira4">NGN 1900</div>
+ </div>
+        <div class="paragraph5">
+        <p>Lite on price, big on quality. GOtv Smallie is</p><br>
+        <p>the easiest way to watch your local favorites </p><br>
+        <p>with crystal clear channels.</p><br>
+        </div>
+ <div class="card5">
+   <div class="supa5" ><img src="./images/smallie_icon-removebg-preview.png" class="end"></div>
+   <div class="supa-6"> <img src="./images/gotv-lite-new.webp" width="60%" height="250vh"></div>
+   <button class="button5"><strong>Know More</strong></button>
+   <div class="plus5">35+ CHANNELS</div>
+   <div class="naira5">NGN &nbsp;&nbsp; 900</div>
+    <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monthly</p> -->
+    <!-- <div class="line">|</div> -->
+   </div>
+   <!-- <div class="naira6">2400
+    <p>Quaterly</p>
+    <div class="line2">|</div>
+   </div>
+   <div class="naira7">&nbsp;&nbsp;&nbsp;7000
+    <p>Annually</p> -->
+   </div>
+ </div>
+<div class="buttom">
+    <div class="down">
+        <img src="./images/multichoice.webp">
+       <p> © Multichoice Africa Holdings BV</p>
+       <p> Website Terms of Use | Privacy and Cookie Policy | Copyright | Whistleblowing | Contact Us | Subscriber T&Cs | Campaigns and Promotions | FAQs | Contracting </p>
+    </div>
+</div>
+    
+</nav>
+    
+    
+        
+       
+</body>
+</html>

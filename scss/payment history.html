@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    
+}
+.head{
+background-image: url(./images/football-off-season_1920x1080.webp);
+background-repeat: no-repeat;
+background-size: cover;
+justify-content: center;
+display: flex;
+width: 100%;
+height: 120vh;
+}
+.cover{
+    background:rgba(0.1, 0.1, 0.1, 0.3);
+    width: 100%;
+    height: 120vh;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+
+
+    
+}
+.card{
+    background: rgb(151, 143, 143);
+    width:30%;
+    height: 99vh;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    padding: 0px;
+    margin: 0;
+    filter: blur(-10px);
+    border: none;
+    
+}
+   /* .search-box{
+        background:rgba(116, 158, 148);
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    border: 0;
+    text-decoration: none;
+    position: absolute;
+    left: 8%;
+    top: 35%;
+    
+    } */
+  
+    
+     .search-box input{
+        background: rgb(177, 179, 179);
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    border: 0;
+    
+    position: absolute;
+    left: 8%;
+    top: 33%;
+    outline: none;
+    
+    }
+     .search-box2 input{
+        background: rgb(177, 179, 179);
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    border: 0;
+    
+    position: absolute;
+    left: 8%;
+    top: 47%;
+    outline: none;
+    
+    }
+ .search-box3 input{
+        background: rgb(177, 179, 179);
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    border: 0;
+    
+    position: absolute;
+    left: 8%;
+    top: 61%;
+    outline: none;
+    
+    }
+    
+    
+    .search-box4 input{
+        background:green;
+    width: 50%;
+    border-radius: 30px;
+    align-items: center;
+    padding: 12px 20px;
+    border: 0;
+    position: absolute;
+    left: 25%;
+    top: 85%;
+    
+    }
+    img{
+        position: absolute;
+        top: 5%;
+        left: 32%;
+        font-size: 40px;
+    }
+     
+    
+    .head1{
+        color: white;
+        position: absolute;
+        top: 23%;
+        left: 30%;
+        font-size: 20px;
+        line-height: -30px;
+    }
+     .checkbox input{
+        position: absolute;
+        top: 71%;
+        left: 13%;
+        background-color: black;
+        
+        
+    }
+    .p{
+        color: green;
+        font-size: 15px;
+        position: absolute;
+        top: 93%;
+        left: 40%;
+    }
+    .activate{
+        background: yellow;
+        outline: none;
+        border: none;
+        border-radius: 19px;
+        padding: 20px 20px;
+        width: 30%;
+        height: 5vh;
+        line-height: 7px;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        top: 75%;
+        left: 33%;
+    }
+    .activate:hover{
+        position: absolute;
+        color: green;
+        cursor: pointer;
+    }
+    .remember{
+        position: absolute;
+        color: white;
+        top:70.55%;
+        left:17%;
+    }
+    .register{
+        background: green;
+        position: absolute;
+        top: 83%;
+        left: 36%;
+        border-radius: 19px;
+        padding: 20px 20px;
+        height: 6vh;
+        padding: 10px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    .register:hover{
+        background: green;
+        position: absolute;
+        z-index: 2;
+    }
+    @media (max-width:1028px){
+        .card{
+            position: absolute;
+            left: 20%;
+            width: 60%;
+        }
+        .logo{
+            position:absolute;
+            top: 3%;
+            left: 15%;
+        }
+    }
+    </style>
+    <div class="head">
+        <div class="cover">
+            <div class="card">
+            <img src="./images/my_gotv_icon-removebg-preview.png" class="logo">
+           <div class="head1">Exiting customer? <strong>Sign In</strong> to your <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Account</div>
+                
+               
+                <div class="search-box">
+                    <input type="text" placeholder="NIGRIA">
+                </div>
+                <div class="search-box2">
+                    <input type="text" placeholder="Surname or Mobile">
+                </div>
+                <div class="search-box3">
+                    <input type="text" placeholder="IUC Number">
+                </div>
+               <div class="checkbox"><input type="checkbox"><span class="remember">remeber me</span></div>
+                <button class="activate"><b>ACTIVATE NOW</b></button>
+                <div class="p"><p>Terms and Conditions</p> </div>
+                <button class="register">REGISTER HERE</button>
+</body>
+</html>
